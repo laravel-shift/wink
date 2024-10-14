@@ -101,6 +101,16 @@ class WinkAuthor extends AbstractWinkModel implements Authenticatable
     }
 
     /**
+     * Get the name of the password field.
+     *
+     * @return string
+     */
+    public function getAuthPasswordName()
+    {
+        return 'password';
+    }
+
+    /**
      * Get the unique identifier for the user.
      *
      * @return mixed
